@@ -142,5 +142,8 @@ wrapt==1.16.0
 zipp==3.17.0
     # via importlib-metadata
 
+setuptools==68.2.2
+zipp==3.17.0
+
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools

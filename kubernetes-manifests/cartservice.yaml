@@ -64,11 +64,11 @@ spec:
           value: "true"
         resources:
           requests:
-            cpu: 200m
-            memory: 64Mi
-          limits:
             cpu: 300m
-            memory: 128Mi
+            memory: 256Mi
+          limits:
+            cpu: 800m
+            memory: 512Mi
         readinessProbe:
           initialDelaySeconds: 15
           grpc:
