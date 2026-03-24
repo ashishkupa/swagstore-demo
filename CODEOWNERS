@@ -1,0 +1,38 @@
+# Swagstore Demo - Code Ownership
+
+# Backend Services
+src/cartservice/ @backend-team @dotnet-team
+src/productcatalogservice/ @backend-team @go-team
+src/checkoutservice/ @backend-team @go-team
+src/paymentservice/ @fintech-team @node-team
+src/currencyservice/ @backend-team @node-team
+src/shippingservice/ @backend-team @go-team
+
+# Frontend & User-Facing
+src/frontend/ @frontend-team @go-team
+
+# Data & Analytics
+src/recommendationservice/ @data-science-team @python-team
+src/shoppingassistantservice/ @data-science-team @python-team
+
+# Email & Notifications
+src/emailservice/ @backend-team @python-team
+
+# Advertising
+src/adservice/ @ads-team @java-team
+
+# Kubernetes & Infrastructure
+kubernetes-manifests/ @platform-team @devops-team
+*.yaml @platform-team @devops-team
+.github/workflows/ @platform-team @devops-team
+docker-compose.yml @platform-team @devops-team
+skaffold.yaml @platform-team @devops-team
+
+# Documentation
+*.md @tech-lead
+
+# Configuration
+src/*/Dockerfile @platform-team
+src/*/requirements.txt @platform-team
+src/*/go.mod @platform-team
+src/*/go.sum @platform-team

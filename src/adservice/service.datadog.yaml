@@ -1,0 +1,34 @@
+service:
+  name: adservice
+  dd-service: adservice
+  team: ads-team
+  description: Generates contextual ads for user sessions
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/adservice
+  
+  type: backend
+  language: java
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: ads-team@company.com
+    - type: slack
+      contact: '#ads-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/adservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/adservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/adservice-runbook
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: ads-team
+    component: backend
+    service-tier: critical

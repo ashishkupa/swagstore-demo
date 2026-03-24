@@ -1,0 +1,35 @@
+service:
+  name: checkoutservice
+  dd-service: checkoutservice
+  team: backend-team
+  description: Handles checkout workflow and order processing
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/checkoutservice
+  
+  type: backend
+  language: go
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: backend-team@company.com
+    - type: slack
+      contact: '#backend-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/checkoutservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/checkoutservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/checkoutservice-runbook
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: backend-team
+    component: backend
+    service-tier: critical
+    payment-dependent: "true"

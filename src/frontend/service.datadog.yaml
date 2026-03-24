@@ -1,0 +1,37 @@
+service:
+  name: frontend
+  dd-service: frontend
+  team: frontend-team
+  description: Web user interface for the e-commerce platform
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/frontend
+  
+  type: frontend
+  language: go
+  framework: HTTP
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: frontend-team@company.com
+    - type: slack
+      contact: '#frontend-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/frontend
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/frontend
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/frontend-runbook
+    - name: Design System
+      url: https://wiki.company.com/swagstore/design-system
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: frontend-team
+    component: frontend
+    service-tier: critical
+    user-facing: "true"

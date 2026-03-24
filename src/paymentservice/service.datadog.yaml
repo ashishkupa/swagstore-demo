@@ -1,0 +1,38 @@
+service:
+  name: paymentservice
+  dd-service: paymentservice
+  team: fintech-team
+  description: Processes payments and integrates with payment gateways
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/paymentservice
+  
+  type: backend
+  language: node
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: fintech-team@company.com
+    - type: slack
+      contact: '#fintech-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/paymentservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/paymentservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/paymentservice-runbook
+    - name: Compliance
+      url: https://wiki.company.com/swagstore/payment-pci-compliance
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: fintech-team
+    component: backend
+    service-tier: critical
+    pci-compliant: "true"
+    payment-processing: "true"

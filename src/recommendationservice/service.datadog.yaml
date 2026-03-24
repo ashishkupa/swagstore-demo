@@ -1,0 +1,40 @@
+service:
+  name: recommendationservice
+  dd-service: recommendationservice
+  team: data-science-team
+  description: Generates personalized product recommendations using ML
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/recommendationservice
+  
+  type: backend
+  language: python
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: data-science-team@company.com
+    - type: slack
+      contact: '#data-science-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/recommendationservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/recommendationservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/recommendationservice-runbook
+    - name: ML Model
+      url: https://wiki.company.com/swagstore/recommendation-model
+    - name: Experiment Tracking
+      url: https://mlflow.company.com/projects/swagstore-recommendations
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: data-science-team
+    component: backend
+    service-tier: standard
+    ml-model: "true"
+    recommendation-engine: "true"

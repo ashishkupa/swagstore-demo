@@ -1,0 +1,41 @@
+service:
+  name: shoppingassistantservice
+  dd-service: shoppingassistantservice
+  team: data-science-team
+  description: AI-powered shopping assistant for user queries and support
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/shoppingassistantservice
+  
+  type: backend
+  language: python
+  framework: HTTP
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: data-science-team@company.com
+    - type: slack
+      contact: '#data-science-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/shoppingassistantservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/shopping-assistant
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/shopping-assistant-runbook
+    - name: LLM Model
+      url: https://wiki.company.com/swagstore/llm-model-config
+    - name: Prompt Engineering
+      url: https://wiki.company.com/swagstore/prompt-templates
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: data-science-team
+    component: backend
+    service-tier: standard
+    ai-powered: "true"
+    llm-model: "true"
+    customer-support: "true"

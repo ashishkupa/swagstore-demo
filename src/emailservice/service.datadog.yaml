@@ -1,0 +1,35 @@
+service:
+  name: emailservice
+  dd-service: emailservice
+  team: backend-team
+  description: Sends transactional emails for orders and notifications
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/emailservice
+  
+  type: backend
+  language: python
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: backend-team@company.com
+    - type: slack
+      contact: '#backend-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/emailservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/emailservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/emailservice-runbook
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: backend-team
+    component: backend
+    service-tier: standard
+    external-api: "true"

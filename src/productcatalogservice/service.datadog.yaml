@@ -1,0 +1,37 @@
+service:
+  name: productcatalogservice
+  dd-service: productcatalogservice
+  team: backend-team
+  description: Manages product catalog, search, and filtering
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/productcatalogservice
+  
+  type: backend
+  language: go
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: backend-team@company.com
+    - type: slack
+      contact: '#backend-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/productcatalogservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/productcatalogservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/productcatalogservice-runbook
+    - name: Database Schema
+      url: https://wiki.company.com/swagstore/product-catalog-schema
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: backend-team
+    component: backend
+    service-tier: critical
+    search-enabled: "true"

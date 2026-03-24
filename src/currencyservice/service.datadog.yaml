@@ -1,0 +1,35 @@
+service:
+  name: currencyservice
+  dd-service: currencyservice
+  team: backend-team
+  description: Provides currency conversion and exchange rates
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/currencyservice
+  
+  type: backend
+  language: node
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: backend-team@company.com
+    - type: slack
+      contact: '#backend-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/currencyservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/currencyservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/currencyservice-runbook
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: backend-team
+    component: backend
+    service-tier: standard
+    external-api: "true"

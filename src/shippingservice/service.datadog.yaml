@@ -1,0 +1,38 @@
+service:
+  name: shippingservice
+  dd-service: shippingservice
+  team: backend-team
+  description: Manages shipping calculations and logistics integration
+  repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/shippingservice
+  
+  type: backend
+  language: go
+  framework: gRPC
+  
+  lifecycle: generally_available
+  
+  contacts:
+    - type: email
+      contact: backend-team@company.com
+    - type: slack
+      contact: '#backend-team'
+  
+  links:
+    - name: GitHub
+      url: https://github.com/ashishkupa/swagstore-demo/tree/main/src/shippingservice
+    - name: Architecture
+      url: https://wiki.company.com/swagstore/shippingservice
+    - name: Runbook
+      url: https://wiki.company.com/swagstore/shippingservice-runbook
+    - name: Logistics Integration
+      url: https://wiki.company.com/swagstore/logistics-api
+  
+  api-versions:
+    - v1
+  
+  tags:
+    team: backend-team
+    component: backend
+    service-tier: standard
+    external-api: "true"
+    logistics: "true"
