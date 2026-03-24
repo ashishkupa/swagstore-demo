@@ -1,7 +1,7 @@
 service:
   name: productcatalogservice
   dd-service: productcatalogservice
-  team: backend-team
+  team: squad-storefront
   description: Manages product catalog, search, and filtering
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/productcatalogservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: backend-team@company.com
+      contact: squad-storefront@company.com
     - type: slack
-      contact: '#backend-team'
+      contact: '#squad-storefront'
   
   links:
     - name: GitHub
@@ -31,7 +31,9 @@ service:
     - v1
   
   tags:
-    team: backend-team
+    team: squad-storefront
     component: backend
     service-tier: critical
     search-enabled: "true"
+    tech-stack: go
+    business-responsibility: "user-experience, seo, product-browsing"

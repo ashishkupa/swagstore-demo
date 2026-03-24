@@ -1,7 +1,7 @@
 service:
   name: adservice
   dd-service: adservice
-  team: ads-team
+  team: squad-payments
   description: Generates contextual ads for user sessions
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/adservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: ads-team@company.com
+      contact: squad-payments@company.com
     - type: slack
-      contact: '#ads-team'
+      contact: '#squad-payments'
   
   links:
     - name: GitHub
@@ -29,6 +29,9 @@ service:
     - v1
   
   tags:
-    team: ads-team
+    team: squad-payments
     component: backend
     service-tier: critical
+    revenue-impact: "true"
+    tech-stack: java
+    business-responsibility: "transaction-security, pci-compliance, revenue-tracking"

@@ -1,7 +1,7 @@
 service:
   name: currencyservice
   dd-service: currencyservice
-  team: backend-team
+  team: squad-checkout
   description: Provides currency conversion and exchange rates
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/currencyservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: backend-team@company.com
+      contact: squad-checkout@company.com
     - type: slack
-      contact: '#backend-team'
+      contact: '#squad-checkout'
   
   links:
     - name: GitHub
@@ -29,7 +29,9 @@ service:
     - v1
   
   tags:
-    team: backend-team
+    team: squad-checkout
     component: backend
     service-tier: standard
     external-api: "true"
+    tech-stack: node
+    business-responsibility: "conversion-rate, tax-calculations, logistics-integration"

@@ -1,7 +1,7 @@
 service:
   name: checkoutservice
   dd-service: checkoutservice
-  team: backend-team
+  team: squad-checkout
   description: Handles checkout workflow and order processing
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/checkoutservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: backend-team@company.com
+      contact: squad-checkout@company.com
     - type: slack
-      contact: '#backend-team'
+      contact: '#squad-checkout'
   
   links:
     - name: GitHub
@@ -29,7 +29,9 @@ service:
     - v1
   
   tags:
-    team: backend-team
+    team: squad-checkout
     component: backend
     service-tier: critical
     payment-dependent: "true"
+    tech-stack: go
+    business-responsibility: "conversion-rate, tax-calculations, logistics-integration"

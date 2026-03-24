@@ -1,7 +1,7 @@
 service:
   name: paymentservice
   dd-service: paymentservice
-  team: fintech-team
+  team: squad-payments
   description: Processes payments and integrates with payment gateways
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/paymentservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: fintech-team@company.com
+      contact: squad-payments@company.com
     - type: slack
-      contact: '#fintech-team'
+      contact: '#squad-payments'
   
   links:
     - name: GitHub
@@ -31,8 +31,10 @@ service:
     - v1
   
   tags:
-    team: fintech-team
+    team: squad-payments
     component: backend
     service-tier: critical
     pci-compliant: "true"
     payment-processing: "true"
+    tech-stack: java
+    business-responsibility: "transaction-security, pci-compliance, revenue-tracking"

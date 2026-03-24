@@ -1,7 +1,7 @@
 service:
   name: shippingservice
   dd-service: shippingservice
-  team: backend-team
+  team: squad-checkout
   description: Manages shipping calculations and logistics integration
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/shippingservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: backend-team@company.com
+      contact: squad-checkout@company.com
     - type: slack
-      contact: '#backend-team'
+      contact: '#squad-checkout'
   
   links:
     - name: GitHub
@@ -31,8 +31,10 @@ service:
     - v1
   
   tags:
-    team: backend-team
+    team: squad-checkout
     component: backend
     service-tier: standard
     external-api: "true"
     logistics: "true"
+    tech-stack: go
+    business-responsibility: "conversion-rate, tax-calculations, logistics-integration"

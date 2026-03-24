@@ -1,38 +1,44 @@
-# Swagstore Demo - Code Ownership
+# Swagstore Demo - Code Ownership (Updated Team Structure)
 
-# Backend Services
-src/cartservice/ @backend-team @dotnet-team
-src/productcatalogservice/ @backend-team @go-team
-src/checkoutservice/ @backend-team @go-team
-src/paymentservice/ @fintech-team @node-team
-src/currencyservice/ @backend-team @node-team
-src/shippingservice/ @backend-team @go-team
+# Squad: Storefront (Go tech stack)
+src/frontend/ @squad-storefront
+src/productcatalogservice/ @squad-storefront
 
-# Frontend & User-Facing
-src/frontend/ @frontend-team @go-team
+# Squad: Checkout (C#/.NET, Node.js, Go)
+src/cartservice/ @squad-checkout
+src/currencyservice/ @squad-checkout
+src/shippingservice/ @squad-checkout
 
-# Data & Analytics
-src/recommendationservice/ @data-science-team @python-team
-src/shoppingassistantservice/ @data-science-team @python-team
+# Squad: Payments (Java tech stack)
+src/paymentservice/ @squad-payments
+src/adservice/ @squad-payments
 
-# Email & Notifications
-src/emailservice/ @backend-team @python-team
+# Squad: Engagement (Python tech stack)
+src/recommendationservice/ @squad-engagement
+src/emailservice/ @squad-engagement
 
-# Advertising
-src/adservice/ @ads-team @java-team
+# Shopping Assistant Service (Python, data-science)
+src/shoppingassistantservice/ @squad-engagement
 
-# Kubernetes & Infrastructure
-kubernetes-manifests/ @platform-team @devops-team
-*.yaml @platform-team @devops-team
-.github/workflows/ @platform-team @devops-team
-docker-compose.yml @platform-team @devops-team
-skaffold.yaml @platform-team @devops-team
+# Checkout Service (Go)
+src/checkoutservice/ @squad-checkout
+
+# Platform & SRE - Infrastructure
+kubernetes-manifests/ @platform-sre
+*.yaml @platform-sre
+.github/workflows/ @platform-sre
+docker-compose.yml @platform-sre
+skaffold.yaml @platform-sre
+Dockerfile @platform-sre
+
+# Database & Cache (Platform/SRE responsibility)
+src/*/Dockerfile @platform-sre
+redis-cart/ @platform-sre
 
 # Documentation
-*.md @tech-lead
+*.md @platform-sre
 
 # Configuration
-src/*/Dockerfile @platform-team
-src/*/requirements.txt @platform-team
-src/*/go.mod @platform-team
-src/*/go.sum @platform-team
+src/*/requirements.txt @platform-sre
+src/*/go.mod @platform-sre
+src/*/go.sum @platform-sre

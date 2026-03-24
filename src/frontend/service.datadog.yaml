@@ -1,7 +1,7 @@
 service:
   name: frontend
   dd-service: frontend
-  team: frontend-team
+  team: squad-storefront
   description: Web user interface for the e-commerce platform
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/frontend
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: frontend-team@company.com
+      contact: squad-storefront@company.com
     - type: slack
-      contact: '#frontend-team'
+      contact: '#squad-storefront'
   
   links:
     - name: GitHub
@@ -31,7 +31,9 @@ service:
     - v1
   
   tags:
-    team: frontend-team
+    team: squad-storefront
     component: frontend
     service-tier: critical
     user-facing: "true"
+    tech-stack: go
+    business-responsibility: "user-experience, seo, product-browsing"

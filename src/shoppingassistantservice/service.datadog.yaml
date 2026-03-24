@@ -1,7 +1,7 @@
 service:
   name: shoppingassistantservice
   dd-service: shoppingassistantservice
-  team: data-science-team
+  team: squad-engagement
   description: AI-powered shopping assistant for user queries and support
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/shoppingassistantservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: data-science-team@company.com
+      contact: squad-engagement@company.com
     - type: slack
-      contact: '#data-science-team'
+      contact: '#squad-engagement'
   
   links:
     - name: GitHub
@@ -33,9 +33,11 @@ service:
     - v1
   
   tags:
-    team: data-science-team
+    team: squad-engagement
     component: backend
     service-tier: standard
     ai-powered: "true"
     llm-model: "true"
     customer-support: "true"
+    tech-stack: python
+    business-responsibility: "customer-retention, ai-driven-upsells, notifications"

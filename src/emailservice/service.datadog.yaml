@@ -1,7 +1,7 @@
 service:
   name: emailservice
   dd-service: emailservice
-  team: backend-team
+  team: squad-engagement
   description: Sends transactional emails for orders and notifications
   repo: https://github.com/ashishkupa/swagstore-demo/tree/main/src/emailservice
   
@@ -13,9 +13,9 @@ service:
   
   contacts:
     - type: email
-      contact: backend-team@company.com
+      contact: squad-engagement@company.com
     - type: slack
-      contact: '#backend-team'
+      contact: '#squad-engagement'
   
   links:
     - name: GitHub
@@ -29,7 +29,10 @@ service:
     - v1
   
   tags:
-    team: backend-team
+    team: squad-engagement
     component: backend
     service-tier: standard
     external-api: "true"
+    notifications: "true"
+    tech-stack: python
+    business-responsibility: "customer-retention, ai-driven-upsells, notifications"
