@@ -20,3 +20,8 @@ pkg/
 release/wi-kubernetes-manifests.yaml
 skaffold
 datadog-agent-with-discovery.yaml
+
+# Gradle build artifacts
+.gradle/
+build/
+*.gradle.lock
